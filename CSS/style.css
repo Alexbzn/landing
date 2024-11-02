@@ -1,0 +1,73 @@
+/* Styles de base */
+@import url(https://fonts.googleapis.com/css?family=Lora|Roboto);
+@import url("components/container.css");
+@import url("components/banner.css");
+@import url("components/card.css");
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: bold; color: black; 
+  margin: 20px;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+.banner h1, .banner h2 {
+  opacity: 0;
+  animation: fadeIn 1s ease-in forwards;
+}
+
+.banner h1 {
+  animation-delay: 0.3s;
+  font-size: 85px;
+
+}
+
+.banner h2 {
+  animation-delay: 1s;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h3 a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.card h3 a:hover {
+  color: #002870;
+}
+
+body {
+  font-family: 'Lora', serif;
+  font-size: 20px;
+  margin: 0;
+  background-color: #0233854d;
+  background-size: cover;         
+  background-position: center;    
+  background-repeat: no-repeat;   
+  background-attachment: fixed;   
+  color: #002870;                   
+}
+
